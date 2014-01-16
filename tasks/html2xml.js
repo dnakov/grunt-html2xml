@@ -12,7 +12,7 @@ var cheerio = require('cheerio');
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('dom_munger', 'Read and manipulate html.', function() {
+  grunt.registerMultiTask('html2xml', 'Read and manipulate html.', function() {
 
     var options = this.options({});
     var done = this.async();
@@ -38,7 +38,8 @@ module.exports = function(grunt) {
         var srcContents = grunt.file.read(f);
 
         var $ = cheerio.load(srcContents,{lowerCaseAttributeNames:false, xmlMode:true});
-        grunt.file.write(dest || f,$.xml());
+        grunt.file.write(f,$.xml());
+        console.log(f);
 
       });
     });
