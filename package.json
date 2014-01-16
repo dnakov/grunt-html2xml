@@ -1,0 +1,42 @@
+{
+  "name": "grunt-html2xml",
+  "description": "Just cheerio .xml, nothing fancy",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dnakov/grunt-html2xml",
+  "author": {
+    "name": "dnakov",
+    "email": "daniel.nakov@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dnakov/grunt-html2xml.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnakov/grunt-html2xml/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dnakov/grunt-html2xml/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2",   
+    "cheerio": "~0.12.3"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
