@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         var srcContents = grunt.file.read(f);
 
         var $ = cheerio.load(srcContents,{lowerCaseAttributeNames:false, xmlMode:true});
-        grunt.file.write(f,$.xml());
+        grunt.file.write(f,$.xml().replace(/&apos;/g, "'"));
 
       });
     });
